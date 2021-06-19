@@ -4,3 +4,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+html,
+body {
+  font-family: "Pacifico", cursive;
+  font-family: "Quicksand", sans-serif;
+}
