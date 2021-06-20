@@ -9,6 +9,125 @@ body {
   font-family: "Pacifico", cursive;
   font-family: "Quicksand", sans-serif;
 }
+/* title  */
+.title h6 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: #ff6600;
+  font-family: "Pacifico", cursive;
+}
+.title h3 {
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 600;
+}
+/* BLOG  */
 .blog {
   background-color: #f7f7f7;
+}
+.blog .card {
+  border: none;
+  background-color: transparent;
+  word-wrap: break-word;
+}
+
+.blog__img {
+  position: relative;
+}
+.blog__post {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+
+  color: #fff;
+}
+.blog__post a {
+  text-decoration: none;
+  background-color: #ff6600;
+  color: #fff;
+  padding: 3px 20px;
+  border-radius: 35px;
+  font-weight: 700;
+  font-size: 12px;
+  margin-bottom: 5px;
+  display: inline-block;
+  letter-spacing: 0.05em;
+}
+.blog__post span {
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+
+  margin-left: 10px;
+}
+.blog__post i {
+  margin-right: 5px;
+}
+.blog__text p {
+  font-size: 18px;
+  line-height: 28px;
+  color: rgba(22, 28, 45, 0.7);
+}
+.blog__text a {
+  text-decoration: none;
+  color: #232121;
+}
+.blog__desc {
+  display: block;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 600;
+  color: #232121;
+
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.blog__cardFooter {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog__cardFooter a {
+  color: #232121;
+  font-weight: 700;
+  text-decoration: none;
+}
+.blog__left {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+}
+.blog__right {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+}
+/* hover  */
+.blog__right:hover a {
+  color: #ff6600;
+}
+.blog__right:hover i {
+  color: #ff6600;
+}
+.blog__cardFooter img {
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-radius: 50%;
+}
+/* TESTIMONIAL */
+
+/* MAX WIDTH 1200PX */
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+  }
 }
