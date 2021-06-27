@@ -665,8 +665,12 @@ footer .subscribe button:hover {
   position: fixed;
   bottom: 10vh;
   right: 5vh;
-  /* visibility: hidden;
-  opacity: 0; */
+  visibility: hidden;
+  opacity: 0;
+}
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
 }
 .backToTop:hover {
   color: #fff;
@@ -674,6 +678,88 @@ footer .subscribe button:hover {
   opacity: 0.8;
 }
 
+/* Right side Nav  */
+.rightNav {
+  width: 90px;
+  /* min-height: 90px; */
+  position: fixed;
+  right: 0;
+  top: 10%;
+  z-index: 99;
+}
+.rightsidenav {
+  display: none;
+  background: #0d1326;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+
+  padding: 10px 5px;
+  overflow-x: hidden;
+  transition: all 0.5s;
+}
+.rightsidenav a {
+  text-decoration: none;
+  color: rgb(230, 235, 255, 0.6);
+}
+.rightNav__btm a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #e6ebff;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+.rightNav__btm a p {
+  font-size: 16px;
+  color: #e6ebff;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+.rightNav__btm a:hover {
+  opacity: 1;
+}
+.rightNav__btm a:hover p {
+  opacity: 1;
+}
+.rightNav__top {
+  padding: 10px 0;
+  text-align: center;
+  border-bottom: 1px solid #41414d;
+}
+.rightNav__top i {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 26px;
+}
+.rightNav__btm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.rightNavOp {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-50%, 50%);
+  z-index: 98;
+  height: 50px;
+}
+.rightNavOp i {
+  background: #0d1326;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #e6ebff;
+  border-radius: 50px;
+  font-size: 26px;
+  cursor: pointer;
+  opacity: 0.5;
+}
 /* MAX WIDTH 1200PX */
 @media screen and (min-width: 1280px) {
   .container {
