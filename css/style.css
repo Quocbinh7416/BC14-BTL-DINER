@@ -17,21 +17,29 @@ body {
   z-index: 99;
   width: 100%;
 }
-.header h1 {
-  font-size: 3rem;
-  font-weight: 600;
+.header__content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
+  padding: 40px 0 20px 0;
 }
-.header form {
-  margin-left: 500px;
-  position: relative;
+.header .navbar {
+  padding: 0;
 }
+.header h1 a {
+  font-size: 36px;
+  font-weight: 700;
+}
+
 .header button {
   position: absolute;
-  top: 0;
-  right: 8px;
+  top: 10px;
+  right: 150px;
 }
 .header input {
-  padding: 0 80px 0 0;
+  border-radius: 6px;
+  padding: 10px 50px 10px 20px;
+  height: 45px;
 }
 .moon {
   color: white;
@@ -111,21 +119,18 @@ body {
   height: 700px;
 }
 .carousel__content {
-  /* position: absolute;
-  bottom: 40%;
-  left: 17%;
-  width: 50%; */
+  padding-top: 200px;
+  padding-left: 0;
 }
 .carousel__text {
-  padding: 20% 500px 0 0;
-  line-height: 50px;
   color: white;
-  font-weight: 600;
+  max-width: 600px;
 }
 .carousel__text a {
   border: 1px solid white;
   color: white;
-  padding: 10px 50px;
+  margin-top: 48px;
+  padding: 12px 45px;
   font-weight: 600;
 }
 .carousel__text a:hover {
@@ -134,7 +139,10 @@ body {
 }
 
 .carousel__content h3 {
-  font-size: 3.5rem;
+  font-size: 54px;
+  line-height: 64px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
 }
 /* about */
 
@@ -143,10 +151,13 @@ body {
 }
 .about__left p {
   color: #ff6600;
+  font-size: 20px;
 }
 
 .about__left h3 {
-  font-size: 2rem;
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 600;
 }
 .about__right {
   font-size: 1.2rem;
@@ -171,12 +182,26 @@ body {
 .book__right {
   background-color: #ff6600;
   font-size: 1.5rem;
+  padding: 64px 72px;
 }
-.book__right .type {
+.book__right p.type1 {
   color: white;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1px;
+  font-family: "Pacifico", cursive;
+}
+.book__right p {
+  color: #ffdfc9;
+  font-size: 18px;
+  margin: 16px 0;
 }
 .book__right h3 {
-  font-size: 3rem;
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 600;
+  color: #232121;
 }
 .book__right .icon {
   padding: 20px 30px;
@@ -184,10 +209,18 @@ body {
   background-color: white;
   display: inline-block;
   color: #ff6600;
+  margin-top: 48px;
 }
 .book__right .icon:hover {
   color: #ffc600;
 }
+.book__right h5 {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #232121;
+}
+
 /* title  */
 .title h6 {
   font-size: 20px;
