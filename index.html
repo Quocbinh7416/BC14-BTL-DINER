@@ -71,13 +71,13 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
 
-  <body>
+  <body id="myBody">
     <header></header>
 
     <section class="header">
       <div class="container header__content">
         <h1 class="d-inline">
-          <a class="text-white">Diner</a>
+          <a href="#" class="text-white">Diner</a>
         </h1>
         <nav class="navbar navbar-light justify-content-between">
           <!-- <h1>
@@ -89,11 +89,14 @@
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn my-2 my-sm-0" type="submit">
+            <button class="btn my-2 my-sm-0 clickColor__text" type="submit">
               <i class="fa fa-search"></i>
             </button>
           </form>
-          <p class="moon"><i class="fa fa-moon"></i></p>
+          <p onclick="clickTheme()" id="switchTheme" class="moon">
+            <i class="far fa-moon"></i>
+            <i class="far fa-sun"></i>
+          </p>
           <div class="overlay-about">
             <div id="myNav" class="overlay">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
@@ -149,10 +152,10 @@
         <div class="row">
           <div class="col-lg-5 about__left">
             <p class="type">About Us</p>
-            <h3>We found our creative space that is open for you.</h3>
+            <h3 class="clickColor__header">We found our creative space that is open for you.</h3>
           </div>
           <div class="col-lg-7 about__right">
-            <p>
+            <p class="clickColor__text">
               Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
               ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
               amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet.
@@ -176,7 +179,7 @@
           </div>
           <div class="col-lg-6 book__right">
             <p class="type1">More than 3000 Restaurants</p>
-            <h3>Book a table easly at the best price</h3>
+            <h3 class="clickColor__header">Book a table easly at the best price</h3>
             <p class="mr-5">
               Vestibulum ante ipsum primis in faucibus orci luctus turpis
               sodales quis. Integer sit amet mattis quam.Vivamus a ligula quam
@@ -187,14 +190,14 @@
                 <p class="icon">
                   <i class="fa fa-thumbs-up"></i>
                 </p>
-                <h5>Best Deal</h5>
+                <h5 class="clickColor__header">Best Deal</h5>
                 <p>Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
               </div>
               <div class="col-6">
                 <p class="icon">
                   <i class="fa fa-utensils"></i>
                 </p>
-                <h5>Best Food</h5>
+                <h5 class="clickColor__header">Best Food</h5>
                 <p>Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
               </div>
             </div>
@@ -208,7 +211,7 @@
       <div class="container py-md5 py-2">
         <div class="category__head text-center">
           <h6>What's New</h6>
-          <h3>Popular Categories</h3>
+          <h3 class="clickColor__header">Popular Categories</h3>
         </div>
         <div class="category__content row">
           <div class="category__item col-4">
@@ -280,40 +283,7 @@
         </div>
       </div>
     </section>
-    <!-- BLOG POSTS
-    <section class="blog py-5">
-      <div class="container py-md-5 py-2">
-        <div class="title text-center">
-          <h6>Latest Posts</h6>
-          <h3>Blog Posts</h3>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mt-5">
-            <div class="card">
-              <div class="card-header p-0 blog__img">
-                <a href="#">
-                  <img src="./img/blog_1.jpg" class="card-img-top" alt="" />
-                </a>
-                <div class="blog__post">
-                  <a href="#">Recipe</a>
-                  <span><i class="far fa-clock"></i> 10 Min Cook</span>
-                </div>
-              </div>
-              <div class="card-body p-0 blog__text">
-                <a href="#" class="blog__desc"
-                  >The Best Cookie Recipes To Bake This Weekend</a
-                >
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui
-                  eligendi vitae sit.
-                </p>
-                <div class="blog__cardFooter mt-3">
-                  <div class="blog__left">
-                    <a href="#">
-                      <img src="./img/blog_team1.jpg" alt="" />
-                    </a>
-                    <a href="#">Rashed Kabir</a>
-                    </section> -->
+  
     <!-- MENU -->
     <section class="menu py-5">
       <div class="menu__content container py-lg-5 py-md-3 py-3">
@@ -325,11 +295,11 @@
                   <i class="fa fa-users"></i>
                 </div>
                 <div class="menu__info">
-                  <p>01</p>
-                  <h4><a href="#">Soup</a></h4>
+                  <p class="clickColor__text">01</p>
+                  <h4 ><a href="#" class="clickColor__header">Soup</a></h4>
                 </div>
               </div>
-              <p class="mt-3">
+              <p class="mt-3 clickColor__text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Deserunt, odit!
               </p>
@@ -342,11 +312,11 @@
                   <i class="fa fa-users"></i>
                 </div>
                 <div class="menu__info">
-                  <p>01</p>
-                  <h4><a href="#">Soup</a></h4>
+                  <p class="clickColor__text">02</p>
+                  <h4 ><a class="clickColor__header" href="#">Drinks</a></h4>
                 </div>
               </div>
-              <p class="mt-3">
+              <p class="mt-3 clickColor__text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Deserunt, odit!
               </p>
@@ -359,11 +329,11 @@
                   <i class="fa fa-users"></i>
                 </div>
                 <div class="menu__info">
-                  <p>01</p>
-                  <h4><a href="#">Soup</a></h4>
+                  <p class="clickColor__text">03</p>
+                  <h4 ><a class="clickColor__header" href="#">Pizza</a></h4>
                 </div>
               </div>
-              <p class="mt-3">
+              <p class="mt-3 clickColor__text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Deserunt, odit!
               </p>
@@ -376,11 +346,11 @@
                   <i class="fa fa-users"></i>
                 </div>
                 <div class="menu__info">
-                  <p>01</p>
-                  <h4><a href="#">Soup</a></h4>
+                  <p class="clickColor__text">04</p>
+                  <h4 ><a class="clickColor__header" href="#">Breakfast</a></h4>
                 </div>
               </div>
-              <p class="mt-3">
+              <p class="mt-3 clickColor__text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Deserunt, odit!
               </p>
@@ -393,11 +363,11 @@
                   <i class="fa fa-users"></i>
                 </div>
                 <div class="menu__info">
-                  <p>01</p>
-                  <h4><a href="#">Soup</a></h4>
+                  <p class="clickColor__text">05</p>
+                  <h4 ><a class="clickColor__header" href="#">Lunch</a></h4>
                 </div>
               </div>
-              <p class="mt-3">
+              <p class="mt-3 clickColor__text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Deserunt, odit!
               </p>
@@ -410,11 +380,11 @@
                   <i class="fa fa-users"></i>
                 </div>
                 <div class="menu__info">
-                  <p>01</p>
-                  <h4><a href="#">Soup</a></h4>
+                  <p class="clickColor__text">06</p>
+                  <h4 ><a href="#" class="clickColor__header">Dinner</a></h4>
                 </div>
               </div>
-              <p class="mt-3">
+              <p class="mt-3 clickColor__text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Deserunt, odit!
               </p>
@@ -452,31 +422,31 @@
       <div class="number__content2 container">
         <div class="number__row row">
           <div class="number__item col-md-3 col-6 mt-md-0 mt-4">
-            <div class="number__text">
+            <div class="number__text clickColor__bg">
               <i class="fa fa-building"></i>
-              <p class="counter">15,100</p>
-              <span>Branches</span>
+              <p class="counter clickColor__header">15,100</p>
+              <span class="clickColor__text">Branches</span>
             </div>
           </div>
           <div class="number__item col-md-3 col-6 mt-md-0 mt-4">
-            <div class="number__text">
+            <div class="number__text clickColor__bg">
               <i class="fa fa-building"></i>
-              <p class="counter">15,100</p>
-              <span>Branches</span>
+              <p class="counter clickColor__header">19,256</p>
+              <span class="clickColor__text">Food Items</span>
             </div>
           </div>
           <div class="number__item col-md-3 col-6 mt-md-0 mt-4">
-            <div class="number__text">
+            <div class="number__text clickColor__bg">
               <i class="fa fa-building"></i>
-              <p class="counter">15,100</p>
-              <span>Branches</span>
+              <p class="counter clickColor__header">12,100</p>
+              <span class="clickColor__text">Chefs</span>
             </div>
           </div>
           <div class="number__item col-md-3 col-6 mt-md-0 mt-4">
-            <div class="number__text">
+            <div class="number__text clickColor__bg">
               <i class="fa fa-building"></i>
-              <p class="counter">15,100</p>
-              <span>Branches</span>
+              <p class="counter clickColor__header">2,560</p>
+              <span class="clickColor__text">Happy Customers</span>
             </div>
           </div>
         </div>
@@ -484,7 +454,7 @@
     </section>
     <!-- VIDEO -->
     <section class="video">
-      <div class="video__main py-5">
+      <div class="video__main py-5 clickColor__bg">
         <div class="container py-lg-5">
           <div class="video__bg position-relative myVideo">
             <a class="popup-with-zoom-anim play-view text-center pl-3">
@@ -511,11 +481,11 @@
     </section>
 
     <!-- BLOG POSTS -->
-    <section class="blog py-5">
+    <section class="blog clickColor__bgLight py-5">
       <div class="container py-md-5 py-2">
         <div class="title text-center">
           <h6>Latest Posts</h6>
-          <h3>Blog Posts</h3>
+          <h3 class="clickColor__header">Blog Posts</h3>
         </div>
         <div class="row">
           <div class="col-lg-4 col-md-6 mt-5">
@@ -530,10 +500,10 @@
                 </div>
               </div>
               <div class="card-body p-0 blog__text">
-                <a href="#" class="blog__desc"
+                <a href="#" class="blog__desc clickColor__header"
                   >The Best Cookie Recipes To Bake This Weekend</a
                 >
-                <p class="card-text">
+                <p class="card-text clickColor__text">
                   Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui
                   eligendi vitae sit.
                 </p>
@@ -542,10 +512,10 @@
                     <a href="#">
                       <img src="./img/blog_team1.jpg" alt="" />
                     </a>
-                    <a href="#">Rashed Kabir</a>
+                    <a class="clickColor__header" href="#">Rashed Kabir</a>
                   </div>
                   <div class="blog__right">
-                    <a href="#">Read More</a>
+                    <a class="clickColor__header" href="#">Read More</a>
                     <i class="fas fa-angle-right"></i>
                   </div>
                 </div>
@@ -564,10 +534,10 @@
                 </div>
               </div>
               <div class="card-body p-0 blog__text">
-                <a href="#" class="blog__desc"
+                <a href="#" class="blog__desc clickColor__header"
                   >The Best Cookie Recipes To Bake This Weekend</a
                 >
-                <p class="card-text">
+                <p class="card-text clickColor__text">
                   Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui
                   eligendi vitae sit.
                 </p>
@@ -576,10 +546,10 @@
                     <a href="#">
                       <img src="./img/blog_team2.jpg" alt="" />
                     </a>
-                    <a href="#">Jannatul Ferdous</a>
+                    <a class="clickColor__header" href="#">Jannatul Ferdous</a>
                   </div>
                   <div class="blog__right">
-                    <a href="#">Read More</a>
+                    <a class="clickColor__header" href="#">Read More</a>
                     <i class="fas fa-angle-right"></i>
                   </div>
                 </div>
@@ -598,10 +568,10 @@
                 </div>
               </div>
               <div class="card-body p-0 blog__text">
-                <a href="#" class="blog__desc"
+                <a href="#" class="blog__desc clickColor__header"
                   >The Best Cookie Recipes To Bake This Weekend</a
                 >
-                <p class="card-text">
+                <p class="card-text clickColor__text">
                   Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui
                   eligendi vitae sit.
                 </p>
@@ -610,10 +580,10 @@
                     <a href="#">
                       <img src="./img/blog_team3.jpg" alt="" />
                     </a>
-                    <a href="#">Rashed Kabir</a>
+                    <a class="clickColor__header" href="#">Rashed Kabir</a>
                   </div>
                   <div class="blog__right">
-                    <a href="#">Read More</a>
+                    <a class="clickColor__header" href="#">Read More</a>
                     <i class="fas fa-angle-right"></i>
                   </div>
                 </div>
@@ -629,7 +599,7 @@
       <div class="container py-lg-5 py-md-3">
         <div class="title mb-5 text-center">
           <h6>Testimonials</h6>
-          <h3>What People Say</h3>
+          <h3 class="clickColor__header">What People Say</h3>
         </div>
         <div class="test__content">
           <div class="test__item w-50 mx-auto">
@@ -637,17 +607,17 @@
               <img src="./img/blog_team1.jpg" alt="" />
             </a>
             <blockquote>
-              <q>OMG! I cannot believe. It's Awesome</q>
+              <q class="clickColor__header">OMG! I cannot believe. It's Awesome</q>
             </blockquote>
-            <p>
+            <p class="clickColor__text">
               My new site is so much faster and easier to work with than my old
               site. They are here to help the customers to get their success.
               Nemo sit eos, quod minus eius illo labore. Pellen tesque libero ut
               justo, ultrices in ligula.
             </p>
             <div class="test__name">
-              <h3>Johnson William</h3>
-              <p>Customer</p>
+              <h3 class="clickColor__header">Johnson William</h3>
+              <p class="clickColor__text">Customer</p>
             </div>
           </div>
           <div class="test__item w-50 mx-auto">
@@ -655,17 +625,17 @@
               <img src="./img/blog_team2.jpg" alt="" />
             </a>
             <blockquote>
-              <q>Simply the best. Better than all the rest.</q>
+              <q class="clickColor__header">Simply the best. Better than all the rest.</q>
             </blockquote>
-            <p class="">
+            <p class="clickColor__text">
               My new site is so much faster and easier to work with than my old
               site. They are here to help the customers to get their success.
               Nemo sit eos, quod minus eius illo labore. Pellen tesque libero ut
               justo, ultrices in ligula.
             </p>
             <div class="test__name">
-              <h3>Alexander Sakura</h3>
-              <p>Customer</p>
+              <h3 class="clickColor__header">Alexander Sakura</h3>
+              <p class="clickColor__text">Customer</p>
             </div>
           </div>
           <div class="test__item w-50 mx-auto">
@@ -673,17 +643,17 @@
               <img src="./img/blog_team3.jpg" alt="" />
             </a>
             <blockquote>
-              <q>OMG! I cannot believe. It's Awesome</q>
+              <q class="clickColor__header">OMG! I cannot believe. It's Awesome</q>
             </blockquote>
-            <p>
+            <p class="clickColor__text">
               My new site is so much faster and easier to work with than my old
               site. They are here to help the customers to get their success.
               Nemo sit eos, quod minus eius illo labore. Pellen tesque libero ut
               justo, ultrices in ligula.
             </p>
             <div class="test__name">
-              <h3>John Wilson</h3>
-              <p>Customer</p>
+              <h3 class="clickColor__header">John Wilson</h3>
+              <p class="clickColor__text">Customer</p>
             </div>
           </div>
           <div class="test__item w-50 mx-auto">
@@ -691,17 +661,17 @@
               <img src="./img/blog_team2.jpg" alt="" />
             </a>
             <blockquote>
-              <q>OMG! I cannot believe. It's Awesome</q>
+              <q class="clickColor__header">OMG! I cannot believe. It's Awesome</q>
             </blockquote>
-            <p>
+            <p class="clickColor__text">
               My new site is so much faster and easier to work with than my old
               site. They are here to help the customers to get their success.
               Nemo sit eos, quod minus eius illo labore. Pellen tesque libero ut
               justo, ultrices in ligula.
             </p>
             <div class="test__name">
-              <h3>Julia sakura</h3>
-              <p>Customer</p>
+              <h3 class="clickColor__header">Julia sakura</h3>
+              <p class="clickColor__text">Customer</p>
             </div>
           </div>
         </div>
@@ -725,22 +695,22 @@
               <ul class="d-flex">
                 <li>
                   <a href="#">
-                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-facebook-f clickColor__bg"></i>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-twitter clickColor__bg"></i>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-instagram clickColor__bg"></i>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-linkedin-in clickColor__bg"></i>
                   </a>
                 </li>
               </ul>
@@ -778,6 +748,7 @@
                 name="email"
                 id=""
                 placeholder="Your Email Address"
+                class="clickColor__text"
               />
               <button class="btn btn-style btn-primary w-100 mt-3">
                 Subscibe Now
@@ -916,5 +887,8 @@
         document.getElementById("myVideo").style.display = "none";
       }
     </script>
+
+    <!-- click theme  -->
+    <script src="./js/clickTheme.js"></script>
   </body>
 </html>

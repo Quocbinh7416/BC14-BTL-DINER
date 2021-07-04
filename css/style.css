@@ -12,7 +12,7 @@ body {
 /* header */
 .header {
   position: absolute;
-  top: 40px;
+  /* top: 40px; */
   left: 0;
   z-index: 99;
   width: 100%;
@@ -29,6 +29,7 @@ body {
 .header h1 a {
   font-size: 36px;
   font-weight: 700;
+  text-decoration: none;
 }
 
 .header button {
@@ -182,7 +183,7 @@ body {
 }
 .about__right {
   font-size: 1.2rem;
-  opacity: 0.5;
+  /* opacity: 0.5; */
 }
 /* book */
 .book__content{
@@ -336,7 +337,7 @@ body {
   transition: all 0.5s ease 0s;
   border-radius: 8px;
   box-shadow: 0 25px 98px 0 rgb(0 0 0 / 3%);
-  background-color: #fff;
+  /* background-color: #fff; */
   position: relative;
   border: 1px solid #eee;
 }
@@ -444,7 +445,7 @@ body {
 }
 
 .number__text {
-  background-color: #fff;
+  /* background-color: #fff; */
   box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
   padding: 40px 20px;
   border-radius: 6px;
@@ -490,7 +491,7 @@ body {
 
   /* VIDEO */
   .video__main {
-    background: #fff;
+    /* background: #fff; */
   }
   .video__bg {
     background: url(/img/banner3.jpg) no-repeat center;
@@ -569,7 +570,7 @@ body {
 
   /* BLOG  */
   .blog {
-    background-color: #f7f7f7;
+    /* background-color: #f7f7f7; */
   }
   .blog .card {
     border: none;
@@ -762,14 +763,14 @@ body {
     color: #ff6600;
     text-align: center;
     font-size: 16px;
-    background-color: #fff;
+    /* background-color: #fff; */
 
     width: 36px;
     height: 36px;
     line-height: 36px;
     border-radius: 6px;
   }
-  .footer__link li:hover i {
+  #myBody .footer__link li:hover i {
     color: #fff;
     background-color: #ff6600;
   }
@@ -952,10 +953,60 @@ body {
     cursor: pointer;
     opacity: 0.5;
   }
+/* click Theme  */
+/* Light theme */
+#myBody{
+  background-color:#232220;
+}
+#myBody input{
+  background-color:#232220;
+}
+#myBody .clickColor__bg{
+  background-color:#232220;
+}
+#myBody .clickColor__bgLight{
+  background-color:#282828;
+}
+#myBody .clickColor__text{
+  color: #c2d0da;
+}
+#myBody .clickColor__header{
+  color: #eee;
+}
+#switchTheme .fa-moon{
+  display: block;
+}
+#switchTheme .fa-sun{
+  display: none;
+}
+/* Dark theme */
+.dark#myBody{
+  background-color:#fff;
+}
+.dark#myBody input{
+  background-color:#fff;
+}
+.dark#myBody .clickColor__bg{
+  background-color:#fff;
+}
+.dark#myBody .clickColor__bgLight{
+  background-color:#f7f7f7;
+}
+.dark#myBody .clickColor__text{
+  color: rgba(22, 28, 45, 0.7);
+}
+.dark#myBody .clickColor__header{
+  color: #232121;
+}
+.dark #switchTheme .fa-moon{
+  display: none;
+}
+.dark #switchTheme .fa-sun{
+  display: block;
+}
   /* MAX WIDTH 1200PX */
-  @media screen and (min-width: 1280px) {
-    .container {
-      max-width: 1200px;
-    }
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
   }
-
+}
