@@ -86,7 +86,7 @@
           <form>
             <input
               class="form-control mr-sm-2"
-              placeholder="Search"
+              placeholder="Search here... "
               aria-label="Search"
             />
             <button class="btn my-2 my-sm-0 clickColor__text" type="submit">
@@ -232,8 +232,8 @@
               </a>
             </div>
             <div class="category__text p-md-5 p-4">
-              <h4>Vegetarian</h4>
-              <span>$350</span>
+              <h4>Drink</h4>
+              <span>$550</span>
             </div>
           </div>
           <div class="category__item col-4">
@@ -243,8 +243,8 @@
               </a>
             </div>
             <div class="category__text p-md-5 p-4">
-              <h4>Vegetarian</h4>
-              <span>$350</span>
+              <h4>Lunch</h4>
+              <span>$650</span>
             </div>
           </div>
           <div class="category__item col-4 mt-4">
@@ -254,8 +254,8 @@
               </a>
             </div>
             <div class="category__text p-md-5 p-4">
-              <h4>Vegetarian</h4>
-              <span>$350</span>
+              <h4>Bakery</h4>
+              <span>$550</span>
             </div>
           </div>
           <div class="category__item col-4 mt-4">
@@ -265,8 +265,8 @@
               </a>
             </div>
             <div class="category__text p-md-5 p-4">
-              <h4>Vegetarian</h4>
-              <span>$350</span>
+              <h4>Desserts</h4>
+              <span>$750</span>
             </div>
           </div>
           <div class="category__item col-4 mt-4">
@@ -276,8 +276,8 @@
               </a>
             </div>
             <div class="category__text p-md-5 p-4">
-              <h4>Vegetarian</h4>
-              <span>$350</span>
+              <h4>Pizza</h4>
+              <span>$850</span>
             </div>
           </div>
         </div>
@@ -309,7 +309,7 @@
             <div class="menu__box">
               <div class="menu__head box-wrap-grid">
                 <div class="menu__icon">
-                  <i class="fa fa-users"></i>
+                  <i class="fa fa-shield-alt"></i>
                 </div>
                 <div class="menu__info">
                   <p class="clickColor__text">02</p>
@@ -326,7 +326,7 @@
             <div class="menu__box">
               <div class="menu__head box-wrap-grid">
                 <div class="menu__icon">
-                  <i class="fa fa-users"></i>
+                  <i class="fa fa-thermometer-full"></i>
                 </div>
                 <div class="menu__info">
                   <p class="clickColor__text">03</p>
@@ -343,7 +343,7 @@
             <div class="menu__box">
               <div class="menu__head box-wrap-grid">
                 <div class="menu__icon">
-                  <i class="fa fa-users"></i>
+                  <i class="fa fa-american-sign-language-interpreting"></i>
                 </div>
                 <div class="menu__info">
                   <p class="clickColor__text">04</p>
@@ -360,7 +360,7 @@
             <div class="menu__box">
               <div class="menu__head box-wrap-grid">
                 <div class="menu__icon">
-                  <i class="fa fa-users"></i>
+                  <i class="fa fa-paint-brush"></i>
                 </div>
                 <div class="menu__info">
                   <p class="clickColor__text">05</p>
@@ -377,7 +377,7 @@
             <div class="menu__box">
               <div class="menu__head box-wrap-grid">
                 <div class="menu__icon">
-                  <i class="fa fa-users"></i>
+                  <i class="fa fa-eraser"></i>
                 </div>
                 <div class="menu__info">
                   <p class="clickColor__text">06</p>
@@ -417,6 +417,7 @@
         </div>
       </div>
     </section>
+
     <!-- NUMBER -->
     <section class="number py-lg-0 py-md-5 py-4">
       <div class="number__content2 container">
@@ -452,6 +453,7 @@
         </div>
       </div>
     </section>
+
     <!-- VIDEO -->
     <section class="video">
       <div class="video__main py-5 clickColor__bg">
@@ -477,6 +479,8 @@
             </div>
           </div>
         </div>
+      </div>
+      <div id="video__overlay" class="video__overlay">
       </div>
     </section>
 
@@ -757,7 +761,24 @@
           </div>
         </div>
       </div>
-      <div class="footer_btm"></div>
+      <div class="footer_btm">
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-8 footer__left">
+                  <span>© 2021 Diner. All rights reserved. Design by 
+                      <a href="#">W3Layouts</a>
+                  </span>
+              </div>
+              <div class="col-lg-4">
+                  <ul class="d-flex text-lg-right footer__right align-item-center">
+                      <li><a href="#">Careers</a></li>
+                      <li class="mx-lg-5 mx-md-4 mx-3"><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">Contact us</a></li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- backToTop section  -->
     <div>
@@ -876,15 +897,24 @@
 
     <script>
       function openVideo() {
+        document.getElementById("video__overlay").style.display = "block";
         document.getElementById("myVideo").style.display = "block";
+        
+
       }
 
       /* Close */
       function closeVideo() {
-        var video = document.getElementById("video");
-        video.pause();
-
-        document.getElementById("myVideo").style.display = "none";
+        var myVideo = document.getElementById("myVideo");
+        myVideo.style.display = "none";
+        var iframes = myVideo.getElementsByTagName("iframe");
+        if (iframes != null) {
+          for (var i = 0; i < iframes.length; i++) {
+            iframes[i].src = iframes[i].src;
+          }
+        }
+        
+        document.getElementById('video__overlay').style.display = "none";
       }
     </script>
 
