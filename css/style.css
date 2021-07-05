@@ -956,22 +956,22 @@ body {
 /* click Theme  */
 /* Light theme */
 #myBody{
-  background-color:#232220;
+  background-color:#fff;
 }
 #myBody input{
-  background-color:#232220;
+  background-color:#fff;
 }
 #myBody .clickColor__bg{
-  background-color:#232220;
+  background-color:#fff;
 }
 #myBody .clickColor__bgLight{
-  background-color:#282828;
+  background-color:#f7f7f7;
 }
 #myBody .clickColor__text{
-  color: #c2d0da;
+  color:  rgba(48, 76, 151, 0.7) ;
 }
 #myBody .clickColor__header{
-  color: #eee;
+  color: #232121;
 }
 #switchTheme .fa-moon{
   display: block;
@@ -981,22 +981,22 @@ body {
 }
 /* Dark theme */
 .dark#myBody{
-  background-color:#fff;
+  background-color:#232220;
 }
 .dark#myBody input{
-  background-color:#fff;
+  background-color:#232220;
 }
 .dark#myBody .clickColor__bg{
-  background-color:#fff;
+  background-color:#232220;
 }
 .dark#myBody .clickColor__bgLight{
-  background-color:#f7f7f7;
+  background-color:#282828;
 }
 .dark#myBody .clickColor__text{
-  color: rgba(22, 28, 45, 0.7);
+  color: #c2d0da;
 }
 .dark#myBody .clickColor__header{
-  color: #232121;
+  color: #eee;
 }
 .dark #switchTheme .fa-moon{
   display: none;
